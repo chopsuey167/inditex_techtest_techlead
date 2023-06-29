@@ -19,7 +19,9 @@ public class PriceService {
   private final PriceRepository priceRepository;
 
   public List<Price> findPricesByFilters(PriceFilterRequest priceFilterRequest) {
-    return priceRepository.findPriceByFilter(priceFilterRequest.getBrandId(), priceFilterRequest.getProductId(),
+    return priceRepository.findPriceByFilter(
+        priceFilterRequest.getBrandId(),
+        priceFilterRequest.getProductId(),
         LocalDateTime.parse(priceFilterRequest.getApplicationDate(), formatter));
   }
 

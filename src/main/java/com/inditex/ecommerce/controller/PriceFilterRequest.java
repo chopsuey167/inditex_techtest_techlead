@@ -1,15 +1,11 @@
 package com.inditex.ecommerce.controller;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
 @AllArgsConstructor
-@Getter
-@Setter
-@ToString
+@Data
 @EqualsAndHashCode
 public class PriceFilterRequest {
 
